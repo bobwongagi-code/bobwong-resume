@@ -1,374 +1,422 @@
-{\rtf1\ansi\ansicpg936\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 <!DOCTYPE html>\
-<html lang="zh-CN">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>\uc0\u29579 \u27874  - \u22823 \u25968 \u25454 \u20135 \u21697 \u19987 \u23478  \u36164 \u28145 \u25968 \u25454 \u20998 \u26512 \u19987 \u23478 </title>\
-    <script src="https://cdn.tailwindcss.com"></script>\
-    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">\
-    <script>\
-        tailwind.config = \{\
-            theme: \{\
-                extend: \{\
-                    colors: \{\
-                        primary: '#1a365d',\
-                        secondary: '#4a5568',\
-                        accent: '#2b6cb0',\
-                        light: '#f7fafc'\
-                    \},\
-                    fontFamily: \{\
-                        sans: ['Inter', 'system-ui', 'sans-serif'],\
-                    \},\
-                \}\
-            \}\
-        \}\
-    </script>\
-    <style type="text/tailwindcss">\
-        @layer utilities \{\
-            .content-auto \{\
-                content-visibility: auto;\
-            \}\
-            .timeline-dot::before \{\
-                content: '';\
-                @apply absolute w-3 h-3 rounded-full bg-accent left-0 top-2 -translate-x-1/2;\
-            \}\
-            .timeline-line::before \{\
-                content: '';\
-                @apply absolute w-0.5 h-full bg-gray-200 left-0 top-0 -translate-x-1/2;\
-            \}\
-        \}\
-    </style>\
-</head>\
-<body class="bg-gray-50 text-gray-800">\
-    <!-- \uc0\u23548 \u33322 \u26639  -->\
-    <header class="sticky top-0 bg-primary text-white shadow-md z-50">\
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">\
-            <div class="text-xl font-bold">\uc0\u29579 \u27874  | \outl0\strokewidth0 \uc0\u22823 \u25968 \u25454 \u20135 \u21697 \u19987 \u23478  \u36164 \u28145 \u25968 \u25454 \u20998 \u26512 \u19987 \u23478 \outl0\strokewidth0 \strokec2 </div>\
-            <nav class="hidden md:flex space-x-8">\
-                <a href="#about" class="hover:text-gray-200 transition">\uc0\u20851 \u20110 \u25105 </a>\
-                <a href="#experience" class="hover:text-gray-200 transition">\uc0\u24037 \u20316 \u32463 \u21382 </a>\
-                <a href="#education" class="hover:text-gray-200 transition">\uc0\u25945 \u32946 \u32463 \u21382 </a>\
-                <a href="#advantages" class="hover:text-gray-200 transition">\uc0\u20010 \u20154 \u20248 \u21183 </a>\
-                <a href="#ai-chat" class="hover:text-gray-200 transition">\uc0\u21644 \u25105 \u30340 AI\u27807 \u36890 </a>\
-            </nav>\
-            <button class="md:hidden text-white">\
-                <i class="fa fa-bars text-xl"></i>\
-            </button>\
-        </div>\
-    </header>\
-\
-    <main class="container mx-auto px-4 py-12">\
-        <!-- \uc0\u20851 \u20110 \u25105  -->\
-        <section id="about" class="mb-20">\
-            <div class="bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto">\
-                <div class="flex flex-col md:flex-row items-center gap-8">\
-                    <div class="w-36 h-36 rounded-full overflow-hidden border-4 border-accent">\
-                        <img src="https://via.placeholder.com/150" alt="\uc0\u29579 \u27874 \u32844 \u19994 \u29031 " class="w-full h-full object-cover">\
-                    </div>\
-                    <div class="text-center md:text-left">\
-                        <h2 class="text-3xl font-bold text-primary mb-4">\uc0\u29579 \u27874 </h2>\
-                        <p class="text-xl text-secondary mb-2">\uc0\u25968 \u25454 \u21672 \u35810 \u20013 \u24515 \u21103 \u24635 \u32463 \u29702 </p>\
-                        <p class="text-gray-600 mb-6">17\uc0\u24180 \u29992 \u25143 \u27934 \u23519 \u32463 \u39564 \u65292 \u20854 \u20013 9\u24180 \u22823 \u25968 \u25454 \u65288 \u30011 \u20687 \u12289 \u34892 \u20026 \u20998 \u26512 \u12289 NLP\u31561 \u65289 \u27934 \u23519 \u32463 \u39564 </p>\
-                        \
-                        <p class="mb-6 text-gray-700">\
-                            \uc0\u20174 \u24066 \u22330 \u35843 \u30740 \u21040 \u22823 \u25968 \u25454 \u20135 \u21697 \u21019 \u26032 \u65292 \u19987 \u27880 \u27773 \u36710 \u34892 \u19994 \u25968 \u25454 \u27934 \u23519 \u19982 \u21830 \u19994 \u21464 \u29616 \u65292 \
-                            \uc0\u25797 \u38271 \u29992 \u25968 \u25454 \u39537 \u21160 \u20915 \u31574 \u65292 \u20197 \u27934 \u23519 \u21019 \u36896 \u21830 \u19994 \u20215 \u20540 \u12290 \u24102 \u39046 \u22242 \u38431 \u23436 \u25104 \u22810 \u20010 \u20174 0\u21040 1\u30340 \
-                            \uc0\u22823 \u25968 \u25454 \u20135 \u21697 \u23413 \u21270 \u65292 \u20855 \u22791 \u20016 \u23500 \u30340 \u22242 \u38431 \u31649 \u29702 \u19982 \u21830 \u19994 \u21464 \u29616 \u32463 \u39564 \u12290 \
-                        </p>\
-                        \
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">\
-                            <a href="tel:13301227760" class="flex items-center gap-2 text-accent hover:underline">\
-                                <i class="fa fa-phone"></i> 13301227760\
-                            </a>\
-                            <a href="mailto:wbjcsx@163.com" class="flex items-center gap-2 text-accent hover:underline">\
-                                <i class="fa fa-envelope"></i> wbjcsx@163.com\
-                            </a>\
-                        </div>\
-                    </div>\
-                </div>\
-            </div>\
-        </section>\
-\
-        <!-- \uc0\u24037 \u20316 \u32463 \u21382  -->\
-        <section id="experience" class="mb-20">\
-            <h2 class="text-3xl font-bold text-primary mb-10 text-center">\uc0\u24037 \u20316 \u32463 \u21382 </h2>\
-            \
-            <div class="max-w-4xl mx-auto relative pl-8 timeline-line">\
-                <!-- \uc0\u26368 \u36817 \u24037 \u20316  -->\
-                <div class="mb-16 relative timeline-dot pl-8">\
-                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">\
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">\
-                            <h3 class="text-2xl font-bold text-primary">\uc0\u21271 \u20140 \u26032 \u24847 \u20114 \u21160 \u25968 \u23383 \u25216 \u26415 \u26377 \u38480 \u20844 \u21496 </h3>\
-                            <span class="bg-accent/10 text-accent px-4 py-1 rounded-full text-sm font-medium">2016.6-\uc0\u33267 \u20170 </span>\
-                        </div>\
-                        <p class="text-xl text-secondary mb-6">\uc0\u32844 \u20301 \u65306 \u25968 \u25454 \u21672 \u35810 \u20013 \u24515 \u21103 \u24635 \u32463 \u29702 </p>\
-                        \
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">\
-                            <div class="bg-light p-4 rounded-lg">\
-                                <h4 class="font-bold text-primary mb-3 flex items-center">\
-                                    <i class="fa fa-list-ul mr-2"></i>\uc0\u24037 \u20316 \u20869 \u23481 \
-                                </h4>\
-                                <ul class="space-y-2 text-gray-700">\
-                                    <li>\'95 \uc0\u24102 \u39046 \u20998 \u26512 &\u20135 \u30740 \u22242 \u38431 \u65292 0\u21040 1\u25171 \u36896 \u27773 \u36710 \u34892 \u19994 \u27934 \u23519 \u20135 \u21697 \'97\'97\u31563 \u26007 \u20113 </li>\
-                                    <li>\'95 2023\uc0\u24180 \u24320 \u22987 \u24341 \u20837 LLM\u65292 \u25506 \u32034 \u20135 \u21697 \u30340 AI\u21270 \u65292 \u26500 \u24314 \u28145 \u24230 \u20998 \u26512 &\u27934 \u23519 Agent\'97\'97Mr.Bo</li>\
-                                    <li>\'95 \uc0\u21521 \u27773 \u36710 \u21697 \u29260 \u30452 \u25509 \u21806 \u21334 \u21464 \u29616 \u65292 \u36171 \u33021 \u20844 \u21496 \u19994 \u21153 \u22686 \u38271 </li>\
-                                </ul>\
-                            </div>\
-                            \
-                            <div class="bg-light p-4 rounded-lg">\
-                                <h4 class="font-bold text-primary mb-3 flex items-center">\
-                                    <i class="fa fa-trophy mr-2"></i>\uc0\u24037 \u20316 \u25104 \u26524 \
-                                </h4>\
-                                <ul class="space-y-2 text-gray-700">\
-                                    <li>\'95 \uc0\u31563 \u26007 \u20113 \u36845 \u20195 \u21040 V6.0\u29256 \u26412 </li>\
-                                    <li>\'95 \uc0\u23436 \u25104 4700\u19975 +\u33829 \u25910 </li>\
-                                    <li>\'95 \uc0\u33719 \u24471 \u19987 \u21033 6\u20214 \u65292 \u36719 \u33879 \u26435 20+\u20214 </li>\
-                                </ul>\
-                            </div>\
-                            \
-                            <div class="bg-light p-4 rounded-lg">\
-                                <h4 class="font-bold text-primary mb-3 flex items-center">\
-                                    <i class="fa fa-project-diagram mr-2"></i>\uc0\u20856 \u22411 \u39033 \u30446 \
-                                </h4>\
-                                <div class="space-y-4 text-gray-700">\
-                                    <div>\
-                                        <p class="font-medium">\uc0\u31563 \u26007 \u20113 &Mr.Bo</p>\
-                                        <a href="https://www.powermarketing.com.cn//product/jdy" target="_blank" class="text-accent hover:underline text-sm">\
-                                            \uc0\u26597 \u30475 \u20135 \u21697  <i class="fa fa-external-link ml-1"></i>\
-                                        </a>\
-                                    </div>\
-                                </div>\
-                            </div>\
-                        </div>\
-                        \
-                        <div class="bg-gray-50 p-4 rounded-lg">\
-                            <h4 class="font-bold text-primary mb-2">\uc0\u39033 \u30446 \u31616 \u20171 </h4>\
-                            <p class="text-gray-700 mb-3">\
-                                \uc0\u31563 \u26007 \u20113 \u23450 \u20301 \u20110 \u27773 \u36710 \u22823 \u25968 \u25454 \u33829 \u38144 \u31574 \u30053 \u25903 \u25345 \u24179 \u21488 \u65292 \u36890 \u36807 \u30011 \u20687 \u12289 \u33258 \u28982 \u35821 \u35328 \u12289 \u34892 \u20026 \u29305 \u24449 \u31561 \u22810 \u28304 \u25968 \u25454 \u30340 \u25972 \u21512 \u65292 \
-                                \uc0\u23558 \u34892 \u19994 \u30693 \u35782 \u21644 \u33829 \u38144 \u39046 \u22495 know-how\u25552 \u28860 \u25104 \u20998 \u26512 \u27169 \u22411 \u21644 \u30693 \u35782 \u22270 \u35889 \u65292 \u36755 \u20986 \u27934 \u23519 \u32467 \u26524 \u65292 \u20026 \u36710 \u20225 \u20135 \u21697 \u24320 \u21457 \u12289 \
-                                \uc0\u20256 \u25773 \u25512 \u24191 \u31561 \u19994 \u21153 \u36171 \u33021 \
-                            </p>\
-                            <p class="text-gray-700">\
-                                Mr.Bo\uc0\u23545 \u26631 Gemini Deep Research\u65292 \u23450 \u20301 \u20110 \u28145 \u24230 \u20998 \u26512 &\u27934 \u23519 Agent\u65292 \u22522 \u20110 \u31563 \u26007 \u20113 \u31215 \u32047 \u30340 8\u24180 +\u25968 \u25454 \u21644 \u25216 \u26415 \u33021 \u21147 \u65292 \
-                                \uc0\u35753 \u24037 \u20855 \u26356 \u21152 \u26131 \u29992 \u65292 \u28145 \u24230 \u20998 \u26512 &\u27934 \u23519 \u32467 \u26524 \u26356 \u21152 \u26131 \u24471 \u65292 \u25552 \u21319 \u24037 \u20316 \u25928 \u29575 \u21450 \u25928 \u26524 \
-                            </p>\
-                        </div>\
-                    </div>\
-                </div>\
-                \
-                <!-- \uc0\u19978 \u19968 \u20221 \u24037 \u20316  -->\
-                <div class="relative timeline-dot pl-8">\
-                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">\
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">\
-                            <h3 class="text-2xl font-bold text-primary">\uc0\u38646 \u28857 \u26377 \u25968 \u31185 \u25216 \u65288 \u21407 \u38646 \u28857 \u30740 \u31350 \u21672 \u35810 \u38598 \u22242 \u65289 </h3>\
-                            <span class="bg-accent/10 text-accent px-4 py-1 rounded-full text-sm font-medium">2008.4-2016.5</span>\
-                        </div>\
-                        <p class="text-xl text-secondary mb-6">\uc0\u32844 \u20301 \u65306 \u27773 \u36710 \u20013 \u24515 \u21103 \u24635 \u32463 \u29702 </p>\
-                        \
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">\
-                            <div class="bg-light p-4 rounded-lg">\
-                                <h4 class="font-bold text-primary mb-3 flex items-center">\
-                                    <i class="fa fa-line-chart mr-2"></i>\uc0\u24037 \u20316 \u25104 \u26524 \
-                                </h4>\
-                                <ul class="space-y-2 text-gray-700">\
-                                    <li>\'95 8\uc0\u24180 \u26102 \u38388 \u36127 \u36131 \u36926 \u30334 \u20010 \u39033 \u30446 \u65292 \u21547 \u29992 \u25143 \u27934 \u23519 \u12289 \u20135 \u21697 \u23450 \u20301 /\u23450 \u20041 \u12289 \u21697 \u29260 \u30740 \u31350 \u12289 \u28192 \u36947 \u30417 \u27979 \u31561 \u39046 \u22495 </li>\
-                                    <li>\'95 \uc0\u21644 \u22242 \u38431 \u19968 \u36215 \u23436 \u25104 \u24180 \u22343 \u19977 \u21315 \u19975 \u33829 \u25910 \u30446 \u26631 \u65288 \u20010 \u26696 \u31867 \u39033 \u30446 \u65289 </li>\
-                                    <li>\'95 \uc0\u23436 \u25104 \u22522 \u20110 \u27773 \u36710 \u22402 \u23186 \u30340 \u25991 \u26412 \u20998 \u26512 \u20135 \u21697 \'97\'97\u36710 e\u35780 1.0</li>\
-                                </ul>\
-                            </div>\
-                            \
-                            <div class="bg-light p-4 rounded-lg">\
-                                <h4 class="font-bold text-primary mb-3 flex items-center">\
-                                    <i class="fa fa-project-diagram mr-2"></i>\uc0\u20856 \u22411 \u39033 \u30446 \
-                                </h4>\
-                                <div class="space-y-4">\
-                                    <div>\
-                                        <p class="font-medium text-gray-700">\uc0\u36710 e\u35780 </p>\
-                                        <p class="text-sm text-gray-600 mb-2">2015\uc0\u24180 11\u26376 \u23545 \u22806 \u21457 \u24067 \u65292 \u21484 \u24320 \u23567 \u22411 \u27801 \u40857 \u65292 \u24182 \u25509 \u21463 \u12298 \u27773 \u36710 \u21830 \u19994 \u35780 \u35770 \u12299 \u19987 \u35775 </p>\
-                                        <p class="text-gray-700 text-sm">\
-                                            \uc0\u36710 e\u35780 \u23450 \u20301 \u20110 \u22823 \u25968 \u25454 \u33286 \u24773 \u27934 \u23519 \u20135 \u21697 \u65292 \u36890 \u36807 \u20998 \u26512 \u29992 \u25143 \u22312 \u27773 \u36710 \u22402 \u30452 \u23186 \u20307 \u19978 \u30340 \u21475 \u30865 \u31561 \u20869 \u23481 \u65292 \
-                                            \uc0\u20102 \u35299 \u26032 \u36710 \u19978 \u24066 \u22768 \u37327 \u12289 \u24863 \u24615 \u29702 \u24615 \u35780 \u20215 \u65292 \u20197 \u21450 \u31454 \u20105 \u36710 \u22411 \u26159 \u35841 \u65292 \u29992 \u25143 \u23545 \u20135 \u21697 \u20351 \u29992 \u20307 \u39564 \u65292 \
-                                            \uc0\u32593 \u28857 \u26381 \u21153 \u20307 \u39564 \u31561 \u20869 \u23481 \u30340 \u35780 \u20215 \u65292 \u30456 \u27604 \u20256 \u32479 \u35843 \u30740 \u65292 \u21487 \u20197 \u26356 \u21152 \u24555 \u36895 \u12289 \u20302 \u25104 \u26412 \u30340 \u21453 \u39304 \u65292 \
-                                            \uc0\u24110 \u21161 \u20225 \u19994 \u36827 \u34892 \u26356 \u20248 \u30340 \u20915 \u31574 \
-                                        </p>\
-                                    </div>\
-                                </div>\
-                            </div>\
-                        </div>\
-                    </div>\
-                </div>\
-            </div>\
-        </section>\
-\
-        <!-- \uc0\u25945 \u32946 \u32463 \u21382  -->\
-        <section id="education" class="mb-20">\
-            <h2 class="text-3xl font-bold text-primary mb-10 text-center">\uc0\u25945 \u32946 \u32463 \u21382 </h2>\
-            \
-            <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-8">\
-                <div class="flex items-start gap-6">\
-                    <div class="min-w-[120px] text-center">\
-                        <div class="bg-accent text-white px-4 py-2 rounded-lg inline-block">\
-                            2002.09<br>~<br>2005.07\
-                        </div>\
-                    </div>\
-                    <div>\
-                        <h3 class="text-2xl font-bold text-primary mb-2">\uc0\u19996 \u21271 \u36130 \u32463 \u22823 \u23398 </h3>\
-                        <p class="text-xl text-secondary mb-4">\uc0\u31649 \u29702 \u23398 \u30805 \u22763  | \u24066 \u22330 \u33829 \u38144 \u26041 \u21521 </p>\
-                        <p class="text-gray-700">\
-                            \uc0\u31995 \u32479 \u23398 \u20064 \u24066 \u22330 \u33829 \u38144 \u29702 \u35770 \u19982 \u30740 \u31350 \u26041 \u27861 \u65292 \u20026 \u21518 \u32493 \u20174 \u20107 \u24066 \u22330 \u35843 \u30740 \u12289 \u29992 \u25143 \u27934 \u23519 \u21450 \
-                            \uc0\u20135 \u21697 \u23450 \u20301 \u31561 \u24037 \u20316 \u22880 \u23450 \u20102 \u22362 \u23454 \u30340 \u29702 \u35770 \u22522 \u30784 \u12290 \u22312 \u26657 \u26399 \u38388 \u34920 \u29616 \u20248 \u24322 \u65292 \u20855 \u22791 \u25166 \u23454 \u30340 \
-                            \uc0\u25968 \u25454 \u20998 \u26512 \u19982 \u31574 \u30053 \u35268 \u21010 \u33021 \u21147 \u12290 \
-                        </p>\
-                    </div>\
-                </div>\
-            </div>\
-        </section>\
-\
-        <!-- \uc0\u20010 \u20154 \u20248 \u21183  -->\
-        <section id="advantages" class="mb-20">\
-            <h2 class="text-3xl font-bold text-primary mb-10 text-center">\uc0\u20010 \u20154 \u20248 \u21183 </h2>\
-            \
-            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">\
-                <div class="bg-white rounded-xl shadow-lg p-6">\
-                    <h3 class="text-xl font-bold text-primary mb-6 flex items-center">\
-                        <i class="fa fa-cogs text-accent mr-3 text-2xl"></i>\uc0\u19987 \u19994 \u33021 \u21147 \
-                    </h3>\
-                    \
-                    <div class="space-y-6">\
-                        <div>\
-                            <div class="flex justify-between mb-1">\
-                                <span class="font-medium">\uc0\u22823 \u25968 \u25454 \u20998 \u26512 </span>\
-                                <span>9\uc0\u24180 +\u32463 \u39564 </span>\
-                            </div>\
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">\
-                                <div class="bg-accent h-2.5 rounded-full" style="width: 90%"></div>\
-                            </div>\
-                            <p class="text-sm text-gray-600 mt-2">\uc0\u30011 \u20687 \u12289 \u34892 \u20026 \u20998 \u26512 \u12289 NLP\u31561 \u25216 \u26415 \u24212 \u29992 </p>\
-                        </div>\
-                        \
-                        <div>\
-                            <div class="flex justify-between mb-1">\
-                                <span class="font-medium">\uc0\u24066 \u22330 \u35843 \u30740 /\u21672 \u35810 </span>\
-                                <span>17\uc0\u24180 \u32463 \u39564 </span>\
-                            </div>\
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">\
-                                <div class="bg-accent h-2.5 rounded-full" style="width: 95%"></div>\
-                            </div>\
-                            <p class="text-sm text-gray-600 mt-2">\uc0\u31934 \u36890 \u21508 \u31867 \u23450 \u24615 \u23450 \u37327 \u30740 \u31350 \u26041 \u27861 </p>\
-                        </div>\
-                        \
-                        <div>\
-                            <div class="flex justify-between mb-1">\
-                                <span class="font-medium">\uc0\u20135 \u21697 \u23413 \u21270 </span>\
-                                <span>\uc0\u22810 \u27454 \u25104 \u21151 \u26696 \u20363 </span>\
-                            </div>\
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">\
-                                <div class="bg-accent h-2.5 rounded-full" style="width: 85%"></div>\
-                            </div>\
-                            <p class="text-sm text-gray-600 mt-2">0\uc0\u21040 1\u25171 \u36896 \u22823 \u25968 \u25454 SaaS\u20135 \u21697 \u32463 \u39564 </p>\
-                        </div>\
-                        \
-                        <div>\
-                            <div class="flex justify-between mb-1">\
-                                <span class="font-medium">\uc0\u22242 \u38431 \u31649 \u29702 </span>\
-                                <span>\uc0\u22810 \u24180 \u31649 \u29702 \u32463 \u39564 </span>\
-                            </div>\
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">\
-                                <div class="bg-accent h-2.5 rounded-full" style="width: 80%"></div>\
-                            </div>\
-                            <p class="text-sm text-gray-600 mt-2">\uc0\u24102 \u39046 \u22242 \u38431 \u23436 \u25104 \u39640 \u33829 \u25910 \u30446 \u26631 </p>\
-                        </div>\
-                    </div>\
-                </div>\
-                \
-                <div class="bg-white rounded-xl shadow-lg p-6">\
-                    <h3 class="text-xl font-bold text-primary mb-6 flex items-center">\
-                        <i class="fa fa-bar-chart text-accent mr-3 text-2xl"></i>\uc0\u39033 \u30446 \u25104 \u26524 \
-                    </h3>\
-                    \
-                    <div class="grid grid-cols-2 gap-4">\
-                        <div class="bg-light p-4 rounded-lg text-center">\
-                            <div class="text-3xl font-bold text-accent mb-1">4700\uc0\u19975 +</div>\
-                            <div class="text-gray-700">\uc0\u31563 \u26007 \u20113 \u39033 \u30446 \u33829 \u25910 </div>\
-                        </div>\
-                        \
-                        <div class="bg-light p-4 rounded-lg text-center">\
-                            <div class="text-3xl font-bold text-accent mb-1">100+</div>\
-                            <div class="text-gray-700">\uc0\u36127 \u36131 \u39033 \u30446 \u25968 \u37327 </div>\
-                        </div>\
-                        \
-                        <div class="bg-light p-4 rounded-lg text-center">\
-                            <div class="text-3xl font-bold text-accent mb-1">6+20+</div>\
-                            <div class="text-gray-700">\uc0\u19987 \u21033 +\u36719 \u33879 \u26435 </div>\
-                        </div>\
-                        \
-                        <div class="bg-light p-4 rounded-lg text-center">\
-                            <div class="text-3xl font-bold text-accent mb-1">3000\uc0\u19975 +</div>\
-                            <div class="text-gray-700">\uc0\u24180 \u22343 \u33829 \u25910 \u30446 \u26631 </div>\
-                        </div>\
-                    </div>\
-                    \
-                    <div class="mt-6 bg-gray-50 p-4 rounded-lg">\
-                        <h4 class="font-bold text-primary mb-2">\uc0\u31649 \u29702 \u39118 \u26684 </h4>\
-                        <p class="text-gray-700">\uc0\u28608 \u21169 \u20026 \u20027 \u65292 \u23562 \u37325 \u20010 \u20307 \u65292 \u32467 \u26524 \u23548 \u21521 </p>\
-                        \
-                        <h4 class="font-bold text-primary mt-4 mb-2">\uc0\u24037 \u20316 \u24615 \u26684 </h4>\
-                        <p class="text-gray-700">\uc0\u25104 \u23601 \u24863 \u39537 \u21160 \u65292 \u35748 \u30495 \u36127 \u36131 \u65292 \u22242 \u38431 \u21512 \u20316 \u12289 \u25191 \u34892 \u21147 \u19982 \u25215 \u21387 \u33021 \u21147 \u24378 </p>\
-                    </div>\
-                </div>\
-            </div>\
-        </section>\
-\
-        <!-- \uc0\u21644 \u25105 \u30340 AI\u27807 \u36890  -->\
-        <section id="ai-chat" class="mb-12">\
-            <h2 class="text-3xl font-bold text-primary mb-10 text-center">\uc0\u21644 \u25105 \u30340 AI\u27807 \u36890 </h2>\
-            \
-            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">\
-                <div class="bg-primary text-white p-4">\
-                    <h3 class="text-xl font-bold">AI\uc0\u21161 \u25163  Mr.Bo</h3>\
-                    <p class="text-gray-200 text-sm">\
-                        \uc0\u22522 \u20110 8\u24180 +\u25968 \u25454 \u21644 \u25216 \u26415 \u33021 \u21147 \u26500 \u24314 \u30340 \u28145 \u24230 \u20998 \u26512 &\u27934 \u23519 Agent\u65292 \u21487 \u20026 \u24744 \u25552 \u20379 \u19987 \u19994 \u30340 \u25968 \u25454 \u20998 \u26512 \u19982 \u27934 \u23519 \u26381 \u21153 \
-                    </p>\
-                </div>\
-                \
-                <div class="p-4">\
-                    <iframe\
-                        src="https://udify.app/chatbot/yRh6ck6vXP2dm7Uc"\
-                        style="width: 100%; height: 700px; border: none;"\
-                        frameborder="0"\
-                        allow="microphone">\
-                    </iframe>\
-                </div>\
-            </div>\
-        </section>\
-    </main>\
-\
-    <footer class="bg-primary text-white py-8">\
-        <div class="container mx-auto px-4 text-center">\
-            <p class="mb-2">\'a9 2023 \uc0\u29579 \u27874 \u20010 \u20154 \u32844 \u19994 \u32593 \u31449  | \outl0\strokewidth0 \uc0\u22823 \u25968 \u25454 \u20135 \u21697 \u19987 \u23478  \u36164 \u28145 \u25968 \u25454 \u20998 \u26512 \u19987 \u23478 \outl0\strokewidth0 \strokec2 </p>\
-            <p class="text-gray-300 text-sm">\uc0\u19987 \u27880 \u20110 \u27773 \u36710 \u34892 \u19994 \u25968 \u25454 \u27934 \u23519 \u19982 \u21830 \u19994 \u21464 \u29616 </p>\
-        </div>\
-    </footer>\
-\
-    <script>\
-        // \uc0\u24179 \u28369 \u28378 \u21160 \
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => \{\
-            anchor.addEventListener('click', function (e) \{\
-                e.preventDefault();\
-                document.querySelector(this.getAttribute('href')).scrollIntoView(\{\
-                    behavior: 'smooth'\
-                \});\
-            \});\
-        \});\
-    </script>\
-</body>\
-</html>}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; -webkit-text-stroke: #000000; min-height: 15.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="zh-CN"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;王波 - 大数据产品专家 数据分析专家&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>tailwind.config = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>theme: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>extend: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>colors: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>primary: '#165DFF',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>secondary: '#334155',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>accent: '#0EA5E9',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>neutral: '#F1F5F9',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>dark: '#0F172A'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>fontFamily: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>sans: ['Inter', 'system-ui', 'sans-serif'],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style type="text/tailwindcss"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@layer utilities {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.content-auto {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>content-visibility: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.text-balance {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>text-wrap: balance;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body class="bg-gray-50 text-gray-800 font-sans"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- 导航栏 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav id="navbar" class="fixed w-full bg-white/95 shadow-md z-50 transition-all duration-300"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-4 py-3 flex justify-between items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="text-xl font-bold text-primary"&gt;王波 | 大数据产品专家 数据分析专家&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="hidden md:flex space-x-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#about" class="hover:text-primary transition-colors"&gt;关于我&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#experience" class="hover:text-primary transition-colors"&gt;工作经历&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#education" class="hover:text-primary transition-colors"&gt;教育经历&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#advantages" class="hover:text-primary transition-colors"&gt;个人优势&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#ai-chat" class="hover:text-primary transition-colors"&gt;AI沟通&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button class="md:hidden text-xl" id="menuBtn"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i class="fa fa-bars"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 移动端菜单 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="mobileMenu" class="hidden md:hidden bg-white border-t"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="container mx-auto px-4 py-2 flex flex-col space-y-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#about" class="py-2 hover:text-primary transition-colors"&gt;关于我&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#experience" class="py-2 hover:text-primary transition-colors"&gt;工作经历&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#education" class="py-2 hover:text-primary transition-colors"&gt;教育经历&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#advantages" class="py-2 hover:text-primary transition-colors"&gt;个人优势&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#ai-chat" class="py-2 hover:text-primary transition-colors"&gt;AI沟通&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- 头部横幅 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header class="pt-24 pb-16 bg-gradient-to-r from-primary to-accent text-white"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-4 md:px-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="md:w-2/3 mb-8 md:mb-0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h1 class="text-4xl md:text-5xl font-bold mb-4"&gt;王波&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-2xl md:text-3xl mb-6"&gt;数据中心副总经理&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-lg md:text-xl max-w-2xl text-balance"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>拥有17年用户洞察经验，9年大数据洞察经验，擅长从0到1打造大数据SaaS产品，实现商业变现</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="md:w-1/3 flex justify-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="w-48 h-48 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-6xl"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;i class="fa fa-line-chart"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main class="container mx-auto px-4 py-12 md:px-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 关于我 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="about" class="mb-20 scroll-mt-20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="w-12 h-1 bg-primary mr-4"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl font-bold"&gt;关于我&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white rounded-xl shadow-lg p-6 md:p-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>我是一名在数据和市场研究领域拥有17年经验的专业人士，其中9年专注于大数据洞察领域。具备从0到1打造大数据SaaS产品的丰富经验，并成功实现商业变现。</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>目前担任北京新意互动数字技术有限公司数据中心副总经理，负责带领团队开发汽车行业大数据营销支持平台，同时探索SaaS+AI新形态，提升数据分析效率与效果。</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>在职业生涯中，我参与并领导了逾百个项目，涵盖用户洞察、产品定位、品牌研究等多个领域，积累了深厚的行业知识和实战经验。我的工作风格以激励为主，尊重个体，注重结果导向，善于团队协作，具备较强的执行力和承压能力。</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-neutral rounded-lg p-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-4xl font-bold text-primary mb-2"&gt;17年&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-gray-600"&gt;用户洞察经验&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-neutral rounded-lg p-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-4xl font-bold text-primary mb-2"&gt;9年&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-gray-600"&gt;大数据洞察经验&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-neutral rounded-lg p-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-4xl font-bold text-primary mb-2"&gt;4700万+&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-gray-600"&gt;营收成果&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-neutral rounded-lg p-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-4xl font-bold text-primary mb-2"&gt;百余个&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-gray-600"&gt;成功项目&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-primary text-2xl mr-4 mt-1"&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 class="font-semibold mb-1"&gt;邮箱&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p&gt;wbjcsx@163.com&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-primary text-2xl mr-4 mt-1"&gt;&lt;i class="fa fa-phone"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 class="font-semibold mb-1"&gt;电话&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p&gt;13301227760&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="text-primary text-2xl mr-4 mt-1"&gt;&lt;i class="fa fa-map-marker"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 class="font-semibold mb-1"&gt;所在地&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p&gt;北京&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 工作经历 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="experience" class="mb-20 scroll-mt-20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="w-12 h-1 bg-primary mr-4"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl font-bold"&gt;工作经历&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- 当前工作 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 border-l-4 border-primary"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-col md:flex-row md:items-center justify-between mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold mb-2"&gt;北京新意互动数字技术有限公司&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-lg text-gray-600"&gt;数据咨询中心副总经理 | 2016.6 - 至今&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full font-medium mt-2 md:mt-0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>9年+</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-xl font-semibold mb-4"&gt;主要工作内容：&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;ul class="list-disc pl-6 mb-6 space-y-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;带领分析&amp;产研团队，从0到1打造汽车行业洞察产品——筋斗云，赋能公司业务，并向汽车品牌直接售卖变现&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;筋斗云获得专利6件，软著权20+件，积累下丰富的技术资产&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;2023年开始引入LLM，在筋斗云的基础上探索产品的AI化，构建深度分析&amp;洞察Agent——Mr.Bo&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-xl font-semibold mb-4"&gt;工作成果：&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;ul class="list-disc pl-6 mb-6 space-y-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;将筋斗云迭代到V6.0版本&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;完成4700万+营收&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;产品领先汽车之家、懂车帝的同类产品（评价来自汽车品牌客户）&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-xl font-semibold mb-4"&gt;典型项目：&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-neutral rounded-lg p-5 hover:shadow-md transition-shadow"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h5 class="font-bold text-lg mb-2"&gt;筋斗云&lt;/h5&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mb-3"&gt;定位于汽车大数据营销策略支持平台，通过画像、自然语言、行为特征等多源数据的整合，将行业知识和营销领域know-how提炼成分析模型和知识图谱，输出洞察结果，为车企产品开发、传播推广等业务赋能。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.powermarketing.com.cn/product/jdy" target="_blank" class="text-primary hover:underline flex items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>查看详情 &lt;i class="fa fa-external-link ml-1"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-neutral rounded-lg p-5 hover:shadow-md transition-shadow"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h5 class="font-bold text-lg mb-2"&gt;Mr.Bo&lt;/h5&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p&gt;对标Gemini Deep Research，定位于深度分析&amp;洞察Agent，基于筋斗云积累的8年+数据和技术能力，让工具更加易用，深度分析&amp;洞察结果更加易得，提升工作效率及效果。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!--<span class="Apple-converted-space">  </span>previous工作 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white rounded-xl shadow-lg p-6 md:p-8 border-l-4 border-gray-500"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-col md:flex-row md:items-center justify-between mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold mb-2"&gt;零点有数科技(原零点研究咨询集团)&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-lg text-gray-600"&gt;汽车中心副总经理 | 2008.4 - 2016.5&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="inline-block bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium mt-2 md:mt-0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>8年+</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-xl font-semibold mb-4"&gt;主要工作内容：&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;ul class="list-disc pl-6 mb-6 space-y-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;负责市场调研/咨询工作，和团队一起完成年均三千万营收目标（个案类项目）&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;进行大数据创新产品孵化，完成基于汽车垂媒的文本分析产品——车e评1.0&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-xl font-semibold mb-4"&gt;工作成果：&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;ul class="list-disc pl-6 mb-6 space-y-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;8年时间负责逾百个项目，涵盖用户洞察、产品定位/定义、品牌研究、渠道监测等领域&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;2015年11月对外发布车e评1.0，召开小型沙龙，并接受《汽车商业评论》专访&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;精通各类定性定量研究方法，并独立撰写培训材料培训新入职员工&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-xl font-semibold mb-4"&gt;典型项目：&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-neutral rounded-lg p-5"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h5 class="font-bold text-lg mb-2"&gt;车e评&lt;/h5&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;定位于大数据舆情洞察产品，通过分析用户在汽车垂直媒体上的口碑等内容，了解新车上市声量、感性理性评价，以及竞争车型分析，用户对产品使用体验和网点服务体验等内容的评价，相比传统调研，可以更加快速、低成本的反馈，帮助企业进行更优的决策。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 教育经历 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="education" class="mb-20 scroll-mt-20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="w-12 h-1 bg-primary mr-4"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl font-bold"&gt;教育经历&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white rounded-xl shadow-lg p-6 md:p-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-col md:flex-row md:items-center justify-between"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold mb-2"&gt;东北财经大学&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-lg text-gray-600"&gt;管理学硕士 | 市场营销方向 | 2002.09 - 2005.07&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="mt-4 md:mt-0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-neutral rounded-lg px-4 py-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;i class="fa fa-graduation-cap text-primary mr-2"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>硕士学位</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 个人优势 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="advantages" class="mb-20 scroll-mt-20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="w-12 h-1 bg-primary mr-4"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl font-bold"&gt;个人优势&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-xl shadow-lg p-6 md:p-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;i class="fa fa-database text-2xl text-primary"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold mb-4"&gt;专业技能&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;i class="fa fa-check-circle text-primary mt-1 mr-3"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;17年用户洞察经验，9年大数据（画像、行为分析、NLP等）洞察经验&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;i class="fa fa-check-circle text-primary mt-1 mr-3"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;从0到1打造大数据SaaS产品，完成4700万+营收&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;i class="fa fa-check-circle text-primary mt-1 mr-3"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;精通各类定性定量研究方法&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;i class="fa fa-check-circle text-primary mt-1 mr-3"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;探索SaaS+AI新形态，引入LLM技术构建深度分析&amp;洞察Agent&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-xl shadow-lg p-6 md:p-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;i class="fa fa-users text-2xl text-primary"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold mb-4"&gt;职业素养&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;i class="fa fa-check-circle text-primary mt-1 mr-3"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;成就感驱动，认真负责，具备强烈的责任心&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;i class="fa fa-check-circle text-primary mt-1 mr-3"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;优秀的团队合作精神，执行力强&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;i class="fa fa-check-circle text-primary mt-1 mr-3"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;具备良好的承压能力，能应对复杂工作挑战&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;i class="fa fa-check-circle text-primary mt-1 mr-3"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span&gt;管理风格以激励为主，尊重个体，结果导向&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 和我的AI沟通 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="ai-chat" class="scroll-mt-20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="w-12 h-1 bg-primary mr-4"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl font-bold"&gt;和我的AI沟通&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white rounded-xl shadow-lg overflow-hidden"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="p-6 md:p-8 border-b border-gray-100"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold"&gt;通过AI助手了解更多信息&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mt-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>我的AI助手Mr.Bo可以为您提供更详细的关于我的信息</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="p-4 md:p-6 h-[700px]"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;iframe</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>src="https://udify.app/chatbot/yRh6ck6vXP2dm7Uc"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>style="width: 100%; height: 100%; min-height: 700px"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>frameborder="0"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>allow="microphone"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/iframe&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-dark text-white py-12"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-4 md:px-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row justify-between items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="mb-6 md:mb-0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-2"&gt;王波&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-400"&gt;大数据产品专家 数据分析专家 | 期待与您合作&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="flex space-x-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="#about" class="text-gray-400 hover:text-white transition-colors"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;i class="fa fa-user text-xl"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="#experience" class="text-gray-400 hover:text-white transition-colors"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;i class="fa fa-briefcase text-xl"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="#education" class="text-gray-400 hover:text-white transition-colors"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;i class="fa fa-graduation-cap text-xl"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="#ai-chat" class="text-gray-400 hover:text-white transition-colors"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;i class="fa fa-comments text-xl"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;© 2023 王波 - 个人求职网站 | 联系电话：13301227760&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 导航栏滚动效果</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.addEventListener('scroll', function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const navbar = document.getElementById('navbar');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (window.scrollY &gt; 50) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>navbar.classList.add('py-2', 'shadow-lg');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>navbar.classList.remove('py-3', 'shadow-md');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>navbar.classList.add('py-3', 'shadow-md');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>navbar.classList.remove('py-2', 'shadow-lg');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 移动端菜单切换</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('menuBtn').addEventListener('click', function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const mobileMenu = document.getElementById('mobileMenu');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>mobileMenu.classList.toggle('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 平滑滚动</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.querySelectorAll('a[href^="#"]').forEach(anchor =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>anchor.addEventListener('click', function (e) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>e.preventDefault();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const targetId = this.getAttribute('href');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const targetElement = document.querySelector(targetId);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (targetElement) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>window.scrollTo({</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>top: targetElement.offsetTop,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>behavior: 'smooth'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// 关闭移动端菜单</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>document.getElementById('mobileMenu').classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
