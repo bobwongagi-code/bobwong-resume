@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王波 - 大数据产品专家 数据分析专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#334155',
+                        accent: '#0EA5E9',
+                        neutral: '#F1F5F9',
+                        dark: '#0F172A'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- 导航栏 -->
+    <nav id="navbar" class="fixed w-full bg-white/95 shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-primary">王波 | 大数据产品专家 数据分析专家</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-primary transition-colors">关于我</a>
+                <a href="#experience" class="hover:text-primary transition-colors">工作经历</a>
+                <a href="#education" class="hover:text-primary transition-colors">教育经历</a>
+                <a href="#advantages" class="hover:text-primary transition-colors">个人优势</a>
+                <a href="#ai-chat" class="hover:text-primary transition-colors">AI沟通</a>
+            </div>
+            <button class="md:hidden text-xl" id="menuBtn">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#about" class="py-2 hover:text-primary transition-colors">关于我</a>
+                <a href="#experience" class="py-2 hover:text-primary transition-colors">工作经历</a>
+                <a href="#education" class="py-2 hover:text-primary transition-colors">教育经历</a>
+                <a href="#advantages" class="py-2 hover:text-primary transition-colors">个人优势</a>
+                <a href="#ai-chat" class="py-2 hover:text-primary transition-colors">AI沟通</a>
+            </div>
+        </div>
+    </nav>
+    <!-- 头部横幅 -->
+    <header class="pt-24 pb-16 bg-gradient-to-r from-primary to-accent text-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-2/3 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">王波</h1>
+                    <h2 class="text-2xl md:text-3xl mb-6">数据中心副总经理</h2>
+                    <p class="text-lg md:text-xl max-w-2xl text-balance">
+                        拥有17年用户洞察经验，9年大数据洞察经验，擅长从0到1打造大数据SaaS产品，实现商业变现
+                    </p>
+                </div>
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-48 h-48 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-6xl">
+                        <i class="fa fa-line-chart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-12 md:px-8">
+        <!-- 关于我 -->
+        <section id="about" class="mb-20 scroll-mt-20">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-1 bg-primary mr-4"></div>
+                <h2 class="text-3xl font-bold">关于我</h2>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <p class="text-lg mb-4">
+                    我是一名在数据和市场研究领域拥有17年经验的专业人士，其中9年专注于大数据洞察领域。具备从0到1打造大数据SaaS产品的丰富经验，并成功实现商业变现。
+                </p>
+                <p class="text-lg mb-4">
+                    目前担任北京新意互动数字技术有限公司数据中心副总经理，负责带领团队开发汽车行业大数据营销支持平台，同时探索SaaS+AI新形态，提升数据分析效率与效果。
+                </p>
+                <p class="text-lg">
+                    在职业生涯中，我参与并领导了逾百个项目，涵盖用户洞察、产品定位、品牌研究等多个领域，积累了深厚的行业知识和实战经验。我的工作风格以激励为主，尊重个体，注重结果导向，善于团队协作，具备较强的执行力和承压能力。
+                </p>
+                <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-neutral rounded-lg p-4 text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">17年</div>
+                        <div class="text-gray-600">用户洞察经验</div>
+                    </div>
+                    <div class="bg-neutral rounded-lg p-4 text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">9年</div>
+                        <div class="text-gray-600">大数据洞察经验</div>
+                    </div>
+                    <div class="bg-neutral rounded-lg p-4 text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">4700万+</div>
+                        <div class="text-gray-600">营收成果</div>
+                    </div>
+                    <div class="bg-neutral rounded-lg p-4 text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">百余个</div>
+                        <div class="text-gray-600">成功项目</div>
+                    </div>
+                </div>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="flex items-start">
+                        <div class="text-primary text-2xl mr-4 mt-1"><i class="fa fa-envelope"></i></div>
+                        <div>
+                            <h3 class="font-semibold mb-1">邮箱</h3>
+                            <p>wbjcsx@163.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-primary text-2xl mr-4 mt-1"><i class="fa fa-phone"></i></div>
+                        <div>
+                            <h3 class="font-semibold mb-1">电话</h3>
+                            <p>13301227760</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-primary text-2xl mr-4 mt-1"><i class="fa fa-map-marker"></i></div>
+                        <div>
+                            <h3 class="font-semibold mb-1">所在地</h3>
+                            <p>北京</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 工作经历 -->
+        <section id="experience" class="mb-20 scroll-mt-20">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-1 bg-primary mr-4"></div>
+                <h2 class="text-3xl font-bold">工作经历</h2>
+            </div>
+            <!-- 当前工作 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 border-l-4 border-primary">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">北京新意互动数字技术有限公司</h3>
+                        <p class="text-lg text-gray-600">数据咨询中心副总经理 | 2016.6 - 至今</p>
+                    </div>
+                    <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full font-medium mt-2 md:mt-0">
+                        9年+
+                    </span>
+                </div>
+                <h4 class="text-xl font-semibold mb-4">主要工作内容：</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li>带领分析&amp;产研团队，从0到1打造汽车行业洞察产品——筋斗云，赋能公司业务，并向汽车品牌直接售卖变现</li>
+                    <li>筋斗云获得专利6件，软著权20+件，积累下丰富的技术资产</li>
+                    <li>2023年开始引入LLM，在筋斗云的基础上探索产品的AI化，构建深度分析&amp;洞察Agent——Mr.Bo</li>
+                </ul>
+                <h4 class="text-xl font-semibold mb-4">工作成果：</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li>将筋斗云迭代到V6.0版本</li>
+                    <li>完成4700万+营收</li>
+                    <li>产品领先汽车之家、懂车帝的同类产品（评价来自汽车品牌客户）</li>
+                </ul>
+                <h4 class="text-xl font-semibold mb-4">典型项目：</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                    <div class="bg-neutral rounded-lg p-5 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-lg mb-2">筋斗云</h5>
+                        <p class="mb-3">定位于汽车大数据营销策略支持平台，通过画像、自然语言、行为特征等多源数据的整合，将行业知识和营销领域know-how提炼成分析模型和知识图谱，输出洞察结果，为车企产品开发、传播推广等业务赋能。</p>
+                        <a href="https://www.powermarketing.com.cn/product/jdy" target="_blank" class="text-primary hover:underline flex items-center">
+                            查看详情 <i class="fa fa-external-link ml-1"></i>
+                        </a>
+                    </div>
+                    <div class="bg-neutral rounded-lg p-5 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-lg mb-2">Mr.Bo</h5>
+                        <p>对标Gemini Deep Research，定位于深度分析&amp;洞察Agent，基于筋斗云积累的8年+数据和技术能力，让工具更加易用，深度分析&amp;洞察结果更加易得，提升工作效率及效果。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- previous工作 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 border-l-4 border-gray-500">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">零点有数科技(原零点研究咨询集团)</h3>
+                        <p class="text-lg text-gray-600">汽车中心副总经理 | 2008.4 - 2016.5</p>
+                    </div>
+                    <span class="inline-block bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium mt-2 md:mt-0">
+                        8年+
+                    </span>
+                </div>
+                <h4 class="text-xl font-semibold mb-4">主要工作内容：</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li>负责市场调研/咨询工作，和团队一起完成年均三千万营收目标（个案类项目）</li>
+                    <li>进行大数据创新产品孵化，完成基于汽车垂媒的文本分析产品——车e评1.0</li>
+                </ul>
+                <h4 class="text-xl font-semibold mb-4">工作成果：</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li>8年时间负责逾百个项目，涵盖用户洞察、产品定位/定义、品牌研究、渠道监测等领域</li>
+                    <li>2015年11月对外发布车e评1.0，召开小型沙龙，并接受《汽车商业评论》专访</li>
+                    <li>精通各类定性定量研究方法，并独立撰写培训材料培训新入职员工</li>
+                </ul>
+                <h4 class="text-xl font-semibold mb-4">典型项目：</h4>
+                <div class="bg-neutral rounded-lg p-5">
+                    <h5 class="font-bold text-lg mb-2">车e评</h5>
+                    <p>定位于大数据舆情洞察产品，通过分析用户在汽车垂直媒体上的口碑等内容，了解新车上市声量、感性理性评价，以及竞争车型分析，用户对产品使用体验和网点服务体验等内容的评价，相比传统调研，可以更加快速、低成本的反馈，帮助企业进行更优的决策。</p>
+                </div>
+            </div>
+        </section>
+        <!-- 教育经历 -->
+        <section id="education" class="mb-20 scroll-mt-20">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-1 bg-primary mr-4"></div>
+                <h2 class="text-3xl font-bold">教育经历</h2>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">东北财经大学</h3>
+                        <p class="text-lg text-gray-600">管理学硕士 | 市场营销方向 | 2002.09 - 2005.07</p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <div class="bg-neutral rounded-lg px-4 py-2">
+                            <i class="fa fa-graduation-cap text-primary mr-2"></i>
+                            硕士学位
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 个人优势 -->
+        <section id="advantages" class="mb-20 scroll-mt-20">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-1 bg-primary mr-4"></div>
+                <h2 class="text-3xl font-bold">个人优势</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-database text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">专业技能</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                            <span>17年用户洞察经验，9年大数据（画像、行为分析、NLP等）洞察经验</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                            <span>从0到1打造大数据SaaS产品，完成4700万+营收</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                            <span>精通各类定性定量研究方法</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                            <span>探索SaaS+AI新形态，引入LLM技术构建深度分析&amp;洞察Agent</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-users text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">职业素养</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                            <span>成就感驱动，认真负责，具备强烈的责任心</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                            <span>优秀的团队合作精神，执行力强</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                            <span>具备良好的承压能力，能应对复杂工作挑战</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-primary mt-1 mr-3"></i>
+                            <span>管理风格以激励为主，尊重个体，结果导向</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 和我的AI沟通 -->
+        <section id="ai-chat" class="scroll-mt-20">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-1 bg-primary mr-4"></div>
+                <h2 class="text-3xl font-bold">和我的AI沟通</h2>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="p-6 md:p-8 border-b border-gray-100">
+                    <h3 class="text-xl font-bold">通过AI助手了解更多信息</h3>
+                    <p class="text-gray-600 mt-2">
+                        我的AI助手Mr.Bo可以为您提供更详细的关于我的信息
+                    </p>
+                </div>
+                <div class="p-4 md:p-6 h-[700px]">
+                    <iframe
+                        src="https://udify.app/chatbot/yRh6ck6vXP2dm7Uc"
+                        style="width: 100%; height: 100%; min-height: 700px"
+                        frameborder="0"
+                        allow="microphone">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">王波</h3>
+                    <p class="text-gray-400">大数据产品专家 数据分析专家 | 期待与您合作</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#about" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa fa-user text-xl"></i>
+                    </a>
+                    <a href="#experience" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa fa-briefcase text-xl"></i>
+                    </a>
+                    <a href="#education" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa fa-graduation-cap text-xl"></i>
+                    </a>
+                    <a href="#ai-chat" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fa fa-comments text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <!-- 使用JavaScript动态生成当前年份 -->
+                <p id="copyright">© <span id="currentYear"></span> 王波 - 个人求职网站 | 联系电话：13301227760</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // 设置当前年份
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2', 'shadow-lg');
+                navbar.classList.remove('py-3', 'shadow-md');
+            } else {
+                navbar.classList.add('py-3', 'shadow-md');
+                navbar.classList.remove('py-2', 'shadow-lg');
+            }
+        });
+        // 移动端菜单切换
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                    // 关闭移动端菜单
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
